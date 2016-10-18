@@ -74,7 +74,8 @@ function exampleChanged() {
 </script>
 </head>
 <body onload="run();">
-<p id="code_vert_error" style="width: 200px;"></p>
+<p id="code_vert_error" ></p>
+<p id="code_frag_error" ></p></td></tr>
 <table>
 <tr style="vertical-align:top;">
 <td><canvas id="myWebGLCanvas" width="600" height="400">Your browser does not support the canvas element</canvas><br>
@@ -97,16 +98,7 @@ function exampleChanged() {
   <option value="4">specular only</option>
 </select>
 <button onclick="updateRenderer()">Reload Shader Code</button>
-</td>
-<td>
-<textarea cols="50" rows="48" class="code_input" id="code_vert" wrap="off"></textarea><br>
-</td>
-<td>
-<textarea cols="55" rows="48" class="code_input" id="code_frag" wrap="off"></textarea><br>
-</td>
 
-<p id="code_frag_error" style="width:600px;"></p></td></tr>
-</table>
 <table>
  <tr>
   <td align='right'>Ambient reflection (ka):</td><td id='slider-ka-value' width='30px'>1.0</td><td><div id='slider-ka'/></td>
@@ -130,6 +122,17 @@ function exampleChanged() {
   <td align='right'>Z:</td> <td id='slider-z-value'  width='30px' align='center'>-1</td><td width='150px'><div id='slider-z'/></td>
  </tr>
 </table>
+
+</td>
+<td>
+<h3>Vertex Shader</h3>
+<textarea cols="55" rows="40" class="code_input" id="code_vert" wrap="off"></textarea><br>
+<h3>Fragment Shader</h3>
+<textarea cols="55" rows="40" class="code_input" id="code_frag" wrap="off"></textarea><br>
+</td>
+
+</table>
+
 <script>
 $('#slider-s').slider({value:80, min:1, max:128, step:1, range:"min", slide:updateShininess});
 $('#slider-ka').slider({value:1, max:1, step:0.01, range:"min", slide:updateLightAmbientTerm});
