@@ -1,0 +1,16 @@
+body { font-family: Calibri,Candara,Segoe,Segoe UI,Optima,Arial,sans-serif; font-size:16px; }
+H1{ font-size: 120%; color: green;}
+H2{ font-size: 100%; color: green; margin:3px 0; }
+select, input, button { font-size:12px; }
+a:link, a:visited { color: #035aa6; }
+a:active, a:hover  { color: #000090; }
+a {text-decoration: none;}
+@font-face { font-family: 'Tex'; src: url('MathJax_Main-Regular.otf'); }
+@font-face { font-family: 'Tex'; src: url('MathJax_Math-Italic.otf'); font-style:italic; }
+.eqn { font-family: "Tex"; word-spacing:-0.12em; text-align:center; }
+.val { font-family: "Tex"; line-height:10%; }
+.small { color:gray; font-size:14; }
+textarea 
+{
+  font-family: monospace;
+}
