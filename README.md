@@ -10,3 +10,7 @@ To run locally with python use:
     ./phong.sh
 
 ![Screenshot](phong-screenshot.jpg)
+
+This is barely changed version of the code at:
+
+http://multivis.net/lecture/phong.html
