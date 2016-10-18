@@ -8,3 +8,5 @@ or
 To run locally with python use:
 
     ./phong.sh
+
+![Screenshot](phong-screenshot.jpg)
